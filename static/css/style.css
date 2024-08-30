@@ -39,10 +39,18 @@ p, h6 {
 a {
     color: #f1f1f1;
     text-decoration: none;
+    text-shadow: 1px 0px #b3987b;
 }
-
 a:hover {
-    color: #cccccc;
+    color: #b39579;
+}
+.nav-link {
+    font-size: larger;
+}
+.nav-link:hover, .nav-link.active {
+    color: #b39579;
+    font-weight: 500;
+    text-shadow: white;
 }
 
 .modal-content {
@@ -67,4 +75,9 @@ a:hover {
 
 .img-fluid {
     max-height: 180px
+}
+
+.btn-outline-light {
+    border-color: rgb(93 54 15);
+    background-color: #b3967a3b;
 }
