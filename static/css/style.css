@@ -1,0 +1,70 @@
+body.custom-background {
+    background-image: url('../images/nasa_background.jpeg');
+    background-repeat: repeat;
+    background-size: 100%;
+    background-position: top left;
+    background-attachment: fixed;
+    color: #f1f1f1;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+}
+
+p, h6 {
+    color: #cccccc;
+}
+
+.bio_job, .project {
+    background-color: #2a2a2a;
+    border: 1px solid rgba(224, 176, 150, 0.3);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: #444444;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #555555;
+}
+
+a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cccccc;
+}
+
+.modal-content {
+    background-color: #2a2a2a;
+    color: #f1f1f1;
+}
+
+.modal-header, .modal-footer {
+    border-color: #333333;
+}
+
+.project {
+    min-height: 220px
+}
+
+.bg-dark {
+    background-color: #343a40;
+    box-shadow: 0 0 5px rgba(224, 176, 150, 0.3), 0 0 10px rgba(224, 176, 150, 0.2), 0 0 21px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.img-fluid {
+    max-height: 180px
+}

@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block title %}Bio{% endblock %}
+
+{% block content %}
+<a href="{{ url_for('sk_bio') }}">SK</a>
+<div class="row">
+    <div class="col-md-4">
+        <div class="p-3 border bg-dark h-100">
+            <div class="bio_about mt-5">
+                <img src="/static/images/36.jpg" alt="photo" class="img-fluid rounded-circle">
+                <h5 class="mt-5">About me:</h5>
+                <p>I am seeking a Python-focused role, particularly in web application development, with a strong interest in back-end development. While Python is my primary language, I am open to exploring other languages with similar paradigms. I am a quick learner, enthusiastic about engaging in interesting and challenging projects that allow me to grow and contribute effectively.</p>
+            </div>
+            <div class="bio_skills mt-5">
+                <h5>Digital Skills:</h5>
+                <ul>
+                    <li>Python, Flask, Django</li>
+                    <li>HTML, CSS, SCSS, Bootstrap</li>
+                    <li>MySql, Sqlite</li>
+                    <li>Javascript, Node.js, jQuery, ASP classic</li>
+                    <li>Git, GitHub, GitLab, Linux</li>
+                    <li>Microsoft Office, Google apps</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <div class="p-3 border bg-dark h-100">
+            <div class="bio_name">
+                <h2>Martina Boboková</h2>
+                <blockquote class="d-inline-block">
+                    „Believe you can and you're halfway there.“
+                    <br>
+                    <span class="d-block text-end">- Theodore Roosevelt</span>
+                </blockquote>
+            </div>
+
+            <div class="bio_jobs" id="bio_jobs">
+                {% for job in jobs %}
+                    <div class="bio_job my-5">
+                        <h5>{{ job.position_name | safe }}</h5>
+                        <h6>{{ job.company | safe }}</h6>
+                        <p>{{ job.job_description | safe }}</p>
+                        <button type="button" class="btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#jobDetailModal" data-job="{{ job.job_detail }}" data-position="{{ job.position_name }}" data-start="{{ job.start_date }}" data-end="{{ job.end_date }}">
+                            View Details
+                        </button>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="jobDetailModal" tabindex="-1" aria-labelledby="jobDetailModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="jobDetailModalLabel">Job Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5 id="jobPosition"></h5>
+                            <span id="jobDates"></span>
+                            <p id="jobDetail"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    var jobDetailModal = document.getElementById('jobDetailModal');
+    jobDetailModal.addEventListener('show.bs.modal', function (event) {
+        var button = event.relatedTarget;
+        var jobDetail = button.getAttribute('data-job');
+        var jobPosition = button.getAttribute('data-position');
+        var startDate = button.getAttribute('data-start');
+        var endDate = button.getAttribute('data-end');
+
+        var modalTitle = jobDetailModal.querySelector('.modal-title');
+        var modalBodyJobPosition = jobDetailModal.querySelector('#jobPosition');
+        var modalBodyJobDates = jobDetailModal.querySelector('#jobDates');
+        var modalBodyJobDetail = jobDetailModal.querySelector('#jobDetail');
+
+        modalBodyJobPosition.innerHTML = jobPosition;
+        modalBodyJobDates.innerHTML = startDate + ' - ' + endDate;
+        modalBodyJobDetail.innerHTML = jobDetail;
+    });
+</script>
+
+{% endblock %}
