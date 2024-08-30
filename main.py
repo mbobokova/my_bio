@@ -9,7 +9,6 @@ df_jobs.columns = df_jobs.columns.str.strip()
 
 df_portfolio = pandas.read_csv("portfolio.csv", sep=",", encoding="ISO-8859-1")
 df_portfolio.columns = df_portfolio.columns.str.strip()
-print(df_portfolio)
 
 
 @app.route("/", methods=["GET", "POST"])
