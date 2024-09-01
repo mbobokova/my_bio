@@ -15,4 +15,4 @@ Weather API,A REST API built with Python and Flask to serve historical weather d
 Visualizing Weather Forecast,"This Streamlit app displays a weather forecast for a selected location, allowing users to view either temperature trends or sky conditions ",https://github.com/mbobokova/weather-forecast-app,16.png
 Tour Event Notifier,"This Python script periodically scrapes a webpage for upcoming tour events, extracts relevant data, and stores it in a SQLite database. If a new event is found, it sends an email notification. ",https://github.com/mbobokova/web-scraping-app,8.png
 Webcam Motion Detector,A program that monitors the computer webcam and sends an email when a new object enters the view.,https://github.com/mbobokova/webcam_alert,11.png
-Portfolio Website,Is this Flask app,,2.png
+Portfolio Website,Is this Flask app,https://github.com/mbobokova/my_bio,2.png
