@@ -39,8 +39,8 @@
             <div class="bio_jobs" id="bio_jobs">
                 {% for job in jobs %}
                     <div class="bio_job my-5">
-                        <h5>{{ job.position_name | safe }}</h5>
-                        <h6>{{ job.company | safe }}</h6>
+                        <h4>{{ job.position_name | safe }}</h4>
+                        <h5>{{ job.company | safe }}</h5>
                         <p>{{ job.job_description | safe }}</p>
                         <button type="button" class="btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#jobDetailModal" data-job="{{ job.job_detail }}" data-position="{{ job.position_name }}" data-start="{{ job.start_date }}" data-end="{{ job.end_date }}">
                             View Details
@@ -59,7 +59,7 @@
                         </div>
                         <div class="modal-body">
                             <h5 id="jobPosition"></h5>
-                            <span id="jobDates"></span>
+                            <span id="jobDates"></span><br>
                             <p id="jobDetail"></p>
                         </div>
                         <div class="modal-footer">
