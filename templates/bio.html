@@ -9,7 +9,7 @@
             <div class="bio_about mt-5">
                 <img src="/static/images/36.jpg" alt="photo" class="img-fluid rounded-circle">
                 <h5 class="mt-5">About me:</h5>
-                <p>I am seeking a Python-focused role, particularly in web application development, with a strong interest in back-end development. While Python is my primary language, I am open to exploring other languages with similar paradigms. I am a quick learner, enthusiastic about engaging in interesting and challenging projects that allow me to grow and contribute effectively.</p>
+                <p>I am seeking a role focused on web development, with a strong interest in back-end development, but given my experience, I am open to starting in front-end development and smoothly transitioning to back-end. Until recently, I was learning and working with Python, and I am currently studying how to work with React. I do not have a specific programming language that I must work with and am always eager to learn something new. I am a quick learner, enthusiastic about engaging in interesting and challenging projects that allow me to grow and contribute effectively.</p>
             </div>
             <div class="bio_skills mt-5">
                 <h5>Digital Skills:</h5>
@@ -40,7 +40,7 @@
                 {% for job in jobs %}
                     <div class="bio_job my-5">
                         <h4>{{ job.position_name | safe }}</h4>
-                        <h5>{{ job.company | safe }}</h5>
+                        <h5>- {{ job.company | safe }}</h5><br>
                         <p>{{ job.job_description | safe }}</p>
                         <button type="button" class="btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#jobDetailModal" data-job="{{ job.job_detail }}" data-position="{{ job.position_name }}" data-start="{{ job.start_date }}" data-end="{{ job.end_date }}">
                             View Details
@@ -59,7 +59,7 @@
                         </div>
                         <div class="modal-body">
                             <h5 id="jobPosition"></h5>
-                            <span id="jobDates"></span><br>
+                            <span id="jobDates"></span><br><br>
                             <p id="jobDetail"></p>
                         </div>
                         <div class="modal-footer">
