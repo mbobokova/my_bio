@@ -1,3 +1,5 @@
+/* Background */
+
 body.custom-background {
     background-image: url('../images/nasa_background.jpeg');
     background-repeat: repeat;
@@ -8,12 +10,63 @@ body.custom-background {
     font-family: Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* About Col */
+
+.about_col {
+    background-color: #775153;
     color: #ffffff;
+
+}
+.main_about {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0; /* Make it stick at the top */
 }
 
-p, h6 {
-    color: #cccccc;
+.bio_name blockquote {
+    font-style: italic;
+}
+.bio_name blockquote span {
+    font-style:normal;
+    font-size: 14px;
+}
+.bio_about img {
+    max-width: 240px;
+}
+.bio_contact img {
+    max-width: 24px;
+    margin-right: 6px;
+}
+.about_col ul {
+    list-style-type:none;
+}
+
+.bio_skills, .bio_contact {
+    background-color: #2a2a2a;
+    border: 1px solid rgba(224, 176, 150, 0.3);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.bio_skills {
+    background-image: url('../images/technology.png');
+    background-size: 25%;
+    background-position: top 6px left 6px;
+    background-repeat: no-repeat;
+}
+.bio_contact {
+    background-image: url('../images/communicate.png');
+    background-size: 30%;
+    background-position: top 16px right 16px;
+    background-repeat: no-repeat;
+    padding-left: 24px;
+}
+/* -- Main contend -- */
+
+.main_content {
+    background-color: #b2977a;
+    border: 2px solid rgba(119, 81, 83, 0.8);
+    padding: 0;
 }
 
 .bio_job, .project {
@@ -22,6 +75,60 @@ p, h6 {
     padding: 15px;
     border-radius: 5px;
 }
+
+/* Navbar */
+
+.navbar {
+    padding: 0;
+    text-align: center;
+}
+
+.navbar-nav .nav-item {
+    width: 50%;
+}
+.navbar a, .project a {
+    color: #b29478;
+    text-decoration: none;
+    font-size: 22px;
+}
+.nav-link.active{
+    color: #2a2a2a;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: #b29478!important;
+}
+
+.navbar a:hover, .project a:hover {
+    color: #775153;
+}
+
+/* Bio Job / Detail */
+
+.bio_job_tech {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #77515342;
+    background-color: #7f7f7f30;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: 0.2em
+}
+.modal-content {
+    background-color: #2a2a2a;
+    color: #f1f1f1;
+}
+
+.modal-header, .modal-footer {
+    border-color: #333333;
+}
+
+/* Projects in portfolio */
+
+.project img {
+    max-height: 180px
+}
+
+/* Buttons */
 
 .btn {
     background-color: #444444;
@@ -32,52 +139,7 @@ p, h6 {
     border-radius: 5px;
 }
 
-.btn:hover {
-    background-color: #555555;
-}
+.btn-secondary:hover {
+    background-color: #775153!important;
 
-a {
-    color: #f1f1f1;
-    text-decoration: none;
-    text-shadow: 1px 0px #b3987b;
-}
-a:hover {
-    color: #b39579;
-}
-.nav-link {
-    font-size: larger;
-}
-.nav-link:hover, .nav-link.active {
-    color: #b39579;
-    font-weight: 500;
-    text-shadow: white;
-}
-
-.modal-content {
-    background-color: #2a2a2a;
-    color: #f1f1f1;
-}
-
-.modal-header, .modal-footer {
-    border-color: #333333;
-}
-
-.project {
-    min-height: 220px
-}
-
-.bg-dark {
-    background-color: #343a40;
-    box-shadow: 0 0 5px rgba(224, 176, 150, 0.3), 0 0 10px rgba(224, 176, 150, 0.2), 0 0 21px rgba(0, 0, 0, 0.5);
-    padding: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.img-fluid {
-    max-height: 180px
-}
-
-.btn-outline-light {
-    border-color: rgb(93 54 15);
-    background-color: #b3967a3b;
 }

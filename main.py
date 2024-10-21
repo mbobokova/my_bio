@@ -13,10 +13,15 @@ df_portfolio.columns = df_portfolio.columns.str.strip()
 
 @app.route("/", methods=["GET", "POST"])
 def bio():
-    jobs = df_jobs[['position_name', 'company', 'job_description', 'job_detail',
-                    'start_date', 'end_date']].to_dict(orient='records')
+    jobs = df_jobs[df_jobs['priority'] == 1]
+    jobs = jobs[['position_name', 'company', 'tech', 'job_description', 'job_detail',
+                 'start_date', 'end_date']].to_dict(orient='records')
 
-    return render_template("bio.html", jobs=jobs)
+    old_jobs = df_jobs[df_jobs['priority'] == 2]
+    old_jobs = old_jobs[['position_name', 'company', 'tech', 'job_description', 'job_detail',
+                         'start_date', 'end_date']].to_dict(orient='records')
+
+    return render_template("bio.html", jobs=jobs, old_jobs=old_jobs)
 
 
 @app.route("/portfolio/", methods=["GET", "POST"])
@@ -25,6 +30,11 @@ def portfolio():
     return render_template("portfolio.html", projects=projects)
 
 
+"""
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=False, host="0.0.0.0", port=port)
+"""
+if __name__ == "__main__":
+    with app.app_context():
+        app.run(debug=True, port=5001)

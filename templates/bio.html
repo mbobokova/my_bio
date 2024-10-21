@@ -3,72 +3,58 @@
 {% block title %}Bio{% endblock %}
 
 {% block content %}
-<div class="row">
-    <div class="col-md-4">
-        <div class="p-3 border bg-dark h-100">
-            <div class="bio_about mt-5">
-                <img src="/static/images/36.jpg" alt="photo" class="img-fluid rounded-circle">
-                <h5 class="mt-5">About me:</h5>
-                <p>I am seeking a role focused on web development, with a strong interest in back-end development, but given my experience, I am open to starting in front-end development and smoothly transitioning to back-end. Until recently, I was learning and working with Python, and I am currently studying how to work with React. I do not have a specific programming language that I must work with and am always eager to learn something new. I am a quick learner, enthusiastic about engaging in interesting and challenging projects that allow me to grow and contribute effectively.</p>
+
+<div class="bio_jobs" id="bio_jobs">
+    {% for job in jobs %}
+        <div class="bio_job my-4">
+            <h4 class="">{{ job.position_name | safe }}</h4>
+            <h5 class="">- {{ job.company | safe }}</h5><br>
+
+            <div class="bio_job_tech mb-3">
+                {{ job.tech | safe }}
             </div>
-            <div class="bio_skills mt-5">
-                <h5>Digital Skills:</h5>
-                <ul>
-                    <li>Python, Flask, Django</li>
-                    <li>HTML, CSS, SCSS, Bootstrap</li>
-                    <li>MySql, Sqlite</li>
-                    <li>Javascript, Node.js, jQuery, ASP classic</li>
-                    <li>Git, GitHub, GitLab, Linux</li>
-                    <li>Microsoft Office, Google apps</li>
-                </ul>
+
+            <p>{{ job.job_description | safe }}</p>
+
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#jobDetailModal" data-job="{{ job.job_detail }}" data-position="{{ job.position_name }}" data-start="{{ job.start_date }}" data-end="{{ job.end_date }}">
+                    Read more...
+                </button>
             </div>
         </div>
-    </div>
+    {% endfor %}
+    {% for old_job in old_jobs %}
+        <div class="bio_job my-4">
+            <h4 class="">{{ old_job.position_name | safe }}</h4>
+            <h5 class="">- {{ old_job.company | safe }}</h5><br>
 
-    <div class="col-md-8">
-        <div class="p-3 border bg-dark h-100">
-            <div class="bio_name">
-                <h2>Martina Boboková</h2>
-                <blockquote class="d-inline-block">
-                    „Believe you can and you're halfway there.“
-                    <br>
-                    <span class="d-block text-end">- Theodore Roosevelt</span>
-                </blockquote>
+            <p>{{ old_job.job_description | safe }}</p>
+
+            <div class="d-flex justify-content-end">
+
             </div>
+        </div>
+    {% endfor %}
+</div>
 
-            <div class="bio_jobs" id="bio_jobs">
-                {% for job in jobs %}
-                    <div class="bio_job my-5">
-                        <h4>{{ job.position_name | safe }}</h4>
-                        <h5>- {{ job.company | safe }}</h5><br>
-                        <p>{{ job.job_description | safe }}</p>
-                        <button type="button" class="btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#jobDetailModal" data-job="{{ job.job_detail }}" data-position="{{ job.position_name }}" data-start="{{ job.start_date }}" data-end="{{ job.end_date }}">
-                            View Details
-                        </button>
-                    </div>
-                {% endfor %}
+
+<!-- Modal block JOB DESCRIPTION -->
+
+<div class="modal fade" id="jobDetailModal" tabindex="-1" aria-labelledby="jobDetailModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="jobDetailModalLabel">Job Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-
-            <!-- Modal -->
-            <div class="modal fade" id="jobDetailModal" tabindex="-1" aria-labelledby="jobDetailModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="jobDetailModalLabel">Job Details</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h5 id="jobPosition"></h5>
-                            <span id="jobDates"></span><br><br>
-                            <p id="jobDetail"></p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="modal-body">
+                <h5 id="jobPosition"></h5>
+                <span id="jobDates"></span><br><br>
+                <p id="jobDetail"></p>
             </div>
-
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
 </div>
