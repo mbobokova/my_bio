@@ -17,12 +17,6 @@ body.custom-background {
     color: #ffffff;
 
 }
-.main_about {
-    position: -webkit-sticky; /* For Safari */
-    position: sticky;
-    top: 0; /* Make it stick at the top */
-}
-
 .bio_name blockquote {
     font-style: italic;
 }
@@ -141,5 +135,11 @@ body.custom-background {
 
 .btn-secondary:hover {
     background-color: #775153!important;
+
+}
+.btn_history {
+    background-color: #77515325;
+    border: 1px solid #775153;
+
 
 }
