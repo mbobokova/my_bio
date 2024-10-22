@@ -1,5 +1,5 @@
 title,description,url,image
-News API,This Python script fetches the latest news articles about Tesla from the News API and sends the information via email.,https://github.com/mbobokova/news_api,5.png
+News API,This Python script fetches the latest news articles about NASA from the News API and sends the information via email.,https://github.com/mbobokova/news_api,5.png
 Chatbox - OpenAi,"This Python script creates a PyQt6 chatbot GUI, featuring a chat display, input field, and send button, with an OpenAI GPT-based backend for generating responses.",https://github.com/mbobokova/chatbox_openai,10.png
 Company Streamlit App,"This Streamlit app features a homepage with company information and a ""Contact Us"" page that allows users to send emails directly through the app.",https://github.com/mbobokova/company_info,12.png
 PDF Templates,A script that generates PDF templates of multiple pages given some predefined guidelines.,https://github.com/mbobokova/pdf_generate,3.png

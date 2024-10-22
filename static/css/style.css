@@ -48,12 +48,13 @@ body.custom-background {
     background-position: top 6px left 6px;
     background-repeat: no-repeat;
 }
-.bio_contact {
-    background-image: url('../images/communicate.png');
-    background-size: 30%;
-    background-position: top 16px right 16px;
-    background-repeat: no-repeat;
-    padding-left: 24px;
+#cat-size {
+    height: 140px;
+}
+#cat-animation {
+    width: 30%;
+    margin-left: auto;
+    cursor: pointer;
 }
 /* -- Main contend -- */
 
@@ -105,7 +106,7 @@ body.custom-background {
     background-color: #7f7f7f30;
     cursor: pointer;
     border-radius: 5px;
-    letter-spacing: 0.2em
+    letter-spacing: 0.1em
 }
 .modal-content {
     background-color: #2a2a2a;
@@ -139,9 +140,24 @@ body.custom-background {
 }
 .btn_history {
     background-color: #77515325;
-    border: 1px solid #775153;
+    border: 1px solid #77515345;
+}
+.btn_contact {
+    background-color:transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.btn_contact:hover {
+    background-color:#77515340;
+}
+.btn_contact:focus {
+    box-shadow: none;
+}
 
-
+.bio_contact button img {
+    max-width: 48px;
+    margin: auto;
 }
 
 /* Mobile fixed */
