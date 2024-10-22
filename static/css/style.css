@@ -143,3 +143,22 @@ body.custom-background {
 
 
 }
+
+/* Mobile fixed */
+
+@media (max-width: 768px) {
+    .main_about {
+    margin-bottom:46px;
+    padding: 0px;
+    }
+    body .container {
+        margin-top:0px;
+    }
+    .bio_job_tech {
+    width:100%;
+    }
+    .project img {
+
+    }
+
+}
