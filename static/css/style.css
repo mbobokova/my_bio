@@ -48,6 +48,8 @@ body.custom-background {
     background-position: top 6px left 6px;
     background-repeat: no-repeat;
 }
+
+/* -- CAT ANIMATIONS -- */
 #cat-size {
     height: 140px;
 }
@@ -56,6 +58,13 @@ body.custom-background {
     margin-left: auto;
     cursor: pointer;
 }
+#sitting_cat-animation {
+    max-width: 20%;
+    margin-right: -6%;
+    opacity: 0.3;
+    display: inline-block;
+}
+
 /* -- Main contend -- */
 
 .main_content {
@@ -74,7 +83,7 @@ body.custom-background {
 /* Navbar */
 
 .navbar {
-    padding: 0;
+    padding: 0px;
     text-align: center;
 }
 
@@ -91,6 +100,7 @@ body.custom-background {
     font-size: 28px;
     font-weight: bold;
     background-color: #b29478!important;
+    height:100%;
 }
 
 .navbar a:hover, .project a:hover {
@@ -100,7 +110,7 @@ body.custom-background {
 /* Bio Job / Detail */
 
 .bio_job_tech {
-    width: 50%;
+    width: 100%;
     padding: 10px;
     border: 1px solid #77515342;
     background-color: #7f7f7f30;

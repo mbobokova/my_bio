@@ -7,8 +7,12 @@
 <div class="bio_jobs" id="bio_jobs">
     {% for job in jobs %}
         <div class="bio_job my-4">
-            <h4 class="">{{ job.position_name | safe }}</h4>
-            <h5 class="">- {{ job.company | safe }}</h5><br>
+            <div class="row">
+                <div class="col">
+                    <h4 class="">{{ job.position_name | safe }}</h4>
+                    <h5 class="">- {{ job.company | safe }}</h5><br>
+                </div>
+            </div>
 
             <div class="bio_job_tech mb-3">
                 {{ job.tech | safe }}
@@ -62,7 +66,7 @@
                 <p id="jobDetail"></p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <div id="sitting_cat-animation"></div><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
@@ -87,5 +91,6 @@
         modalBodyJobDetail.innerHTML = jobDetail;
     });
 </script>
+
 
 {% endblock %}

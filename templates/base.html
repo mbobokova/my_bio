@@ -75,7 +75,7 @@
 }
                         </code></pre>
                     </div>
-
+                    <div id="lift_cat-animation"></div>
                 </div>
             </div>
 
@@ -87,7 +87,10 @@
                             <a class="nav-link {% if request.endpoint == 'bio' %}active{% endif %}" aria-current="page" href="{{ url_for('bio') }}">Work Experience</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {% if request.endpoint == 'portfolio' %}active{% endif %}" href="{{ url_for('portfolio') }}">Portfolio</a>
+                            <a class="nav-link {% if request.endpoint == 'portfolio' %}active{% endif %}" href="{{ url_for('portfolio') }}">
+                               Portfolio
+                            </a>
+
                         </li>
                     </ul>
                 </nav>
@@ -102,7 +105,7 @@
         </div>
     </div>
 
-    <script src="/static/js/scripts.js"></script>
+    <script src="static/js/cat_animation_scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
@@ -162,32 +165,62 @@
             toastList.forEach(toast => toast.show()); // Show each toast message automatically
         });
     </script>
+<!-- Cat animation Lottie / Contact -->
+<script>
+    var animation = lottie.loadAnimation({
+        container: document.getElementById('cat-animation'),
+        path: 'static/animations/kitty.json',
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        name: "Kitty"
+    });
+    animation.setSpeed(0.7);
+
+    // Event listener for mouse pointer
+    document.getElementById('cat-animation').addEventListener('mouseenter', function() {
+        animation.setDirection(1); // Ensure forward direction when hovered
+        animation.play(); // Start the animation on mouse enter
+    });
+
+    // Reverse animation after completion and reset to initial state
+    animation.addEventListener('complete', function() {
+        if (animation.playDirection === 1) {
+            // After playing forward, reverse it
+            animation.setDirection(-1);
+            animation.play();
+        } else {
+            // After reverse, reset to the first frame
+            animation.goToAndStop(0, true);
+        }
+    });
+</script>
+
+<!-- Lift Cat animation Lottie / Tech -->
+<script>
+    var lift_animation = lottie.loadAnimation({
+        container: document.getElementById('lift_cat-animation'),
+        path: '/static/animations/liftcat.json',
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: "liftcat"
+    });
+    animation.setSpeed(0.7);
+</script>
+
+<!-- Sitting Cat animation Lottie / Jobs -->
+<script>
+    var sittingCatAnimation = lottie.loadAnimation({
+        container: document.getElementById('sitting_cat-animation'),
+        path: '/static/animations/sitting_cat.json',
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        name: "sitting_cat"
+    });
+</script>
 
 
-    <!-- Cat animation Lottie -->
-    <script>
-        var animation = lottie.loadAnimation({
-            container: document.getElementById('cat-animation'),
-            path: '/static/animations/kitty.json',
-            renderer: 'svg',
-            loop: false,
-            autoplay: false,
-            name: "Kitty"
-        });
-        animation.setSpeed(0.7);
-
-        // Event listener for mouse pointer
-        document.getElementById('cat-animation').addEventListener('mouseenter', function() {
-            animation.play(); // Start the animation on mouse enter
-        });
-
-        // Reverse animation back after completed
-        animation.addEventListener('complete', function() {
-            animation.setDirection(-1); // Set direction to reverse
-            animation.play(); // Play the animation in reverse
-        });
-
-
-    </script>
 </body>
 </html>
