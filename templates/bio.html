@@ -9,8 +9,16 @@
         <div class="bio_job my-4">
             <div class="row">
                 <div class="col">
-                    <h4 class="">{{ job.position_name | safe }}</h4>
-                    <h5 class="">- {{ job.company | safe }}</h5><br>
+
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="">{{ job.company | safe }}</h4>
+                        </div>
+                        <div class="bio_job-date col text-end">
+                            {{ job.start_date | safe }} - {{ job.end_date | safe }}
+                        </div>
+                    </div>
+                    <h5 class="">{{ job.position_name | safe }}</h5>
                 </div>
             </div>
 
@@ -37,7 +45,7 @@
 
     <!-- Button to toggle the visibility of the old jobs section -->
     <div class="d-flex justify-content-center">
-        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#old-jobs-section" aria-expanded="false" aria-controls="old-jobs-section">
+        <button class="btn btn_history" type="button" data-bs-toggle="collapse" data-bs-target="#old-jobs-section" aria-expanded="false" aria-controls="old-jobs-section">
             I want to see ancient history...
         </button>
     </div>
@@ -57,10 +65,9 @@
     </div>
 </div>
 
-
 <!-- Modal block JOB DESCRIPTION -->
 
-<div class="modal fade" id="jobDetailModal" tabindex="-1" aria-labelledby="jobDetailModalLabel" aria-hidden="true">
+<div class="modal fade move_modal" id="jobDetailModal" tabindex="-1" aria-labelledby="jobDetailModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">

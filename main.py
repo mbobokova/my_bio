@@ -23,9 +23,9 @@ def bio():
 
         try:
             send_email(message, sender)
-            flash("Email sent successfully!", "success")  # Flash success message
+            flash("Yay! Your message was sent successfully!", "success")  # Flash success message
         except Exception as e:
-            flash(f"Failed to send email: {e}", "danger")  # Flash error message
+            flash(f"Ups! Failed to send message: {e}", "danger")  # Flash error message
 
     # Fetch the jobs based on priority and convert to a list of dictionaries
     jobs = df_jobs[df_jobs['priority'] == 1]

@@ -52,3 +52,14 @@ var sittingCatAnimation = lottie.loadAnimation({
     autoplay: true,
     name: "sitting_cat"
 });
+
+// Bug Report
+
+var bugReportAnimation = lottie.loadAnimation({
+    container: document.getElementById('bug_report'),
+    path: '/static/animations/bug.json',
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    name: "bug_report"
+});
