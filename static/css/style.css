@@ -102,7 +102,7 @@ body.custom-background {
     color: #dddad7;
     font-family: 'Fira Code', 'Courier New', monospace;
     background-color: #1e1e1e;
-
+    padding: 16px 8px;
     border: 1px solid #77515342;
     border-radius: 5px;
 }
