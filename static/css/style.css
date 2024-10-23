@@ -166,10 +166,6 @@ body.custom-background {
 
 /* --- CAT ANIMATIONS --- */
 
-#cat-size {
-    height: 140px;
-
-}
 #cat-animation {
     width: 30%;
     cursor: pointer;
@@ -205,5 +201,8 @@ body.custom-background {
     }
     #lift_cat-animation {
         margin-top: -8%;
+    }
+    #cat-animation {
+        width: 33%;
     }
 }
