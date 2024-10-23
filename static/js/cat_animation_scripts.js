@@ -39,7 +39,7 @@ var lift_animation = lottie.loadAnimation({
     autoplay: true,
     name: "liftcat"
 });
-animation.setSpeed(0.7);
+lift_animation.setSpeed(0.7);
 
 
 // Sitting Cat animation Lottie / Jobs

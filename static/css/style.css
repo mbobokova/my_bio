@@ -47,6 +47,9 @@ body.custom-background {
     margin: 10px;
     border-radius: 5px;
 }
+.bio_contact {
+    margin-top:4px;
+}
 .bio_skills {
     background-image: url('../images/technology.png');
     background-size: 25%;
@@ -165,14 +168,15 @@ body.custom-background {
 
 #cat-size {
     height: 140px;
+
 }
 #cat-animation {
     width: 30%;
-    margin-left: auto;
     cursor: pointer;
 }
 #lift_cat-animation {
-    margin-top: -10%;
+    margin: -8% auto;
+    max-width: 240px;
 }
 #sitting_cat-animation {
     max-width: 20%;
