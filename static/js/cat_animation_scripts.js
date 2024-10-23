@@ -2,7 +2,7 @@
 
 var animation = lottie.loadAnimation({
     container: document.getElementById('cat-animation'),
-    path: 'static/animations/kitty.json',
+    path: '/static/animations/kitty.json',
     renderer: 'svg',
     loop: false,
     autoplay: false,

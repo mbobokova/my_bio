@@ -185,15 +185,17 @@ body.custom-background {
 
 @media (max-width: 768px) {
     .main_about {
-    padding: 0px;
+        padding: 0px;
     }
     body .container {
         margin-top:0px;
     }
     .bio_job_tech {
-    width:100%;
+        width:100%;
     }
     .project img {
 
     }
+    .bio_contact, .bio_skills {
+        margin: 0px}
 }
