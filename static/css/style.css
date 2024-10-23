@@ -99,10 +99,10 @@ body.custom-background {
 /* --- Bio Job / Job Detail --- */
 
 .bio_job_description {
-    color: #b2977a;
+    color: #dddad7;
     font-family: 'Fira Code', 'Courier New', monospace;
     background-color: #1e1e1e;
-    font-style: italic;
+
     border: 1px solid #77515342;
     border-radius: 5px;
 }
