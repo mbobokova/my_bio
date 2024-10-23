@@ -197,5 +197,9 @@ body.custom-background {
 
     }
     .bio_contact, .bio_skills {
-        margin: 0px}
+        margin: 0px
+    }
+    #lift_cat-animation {
+        margin-top: -8%;
+    }
 }
