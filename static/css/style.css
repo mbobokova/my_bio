@@ -1,5 +1,11 @@
-/* Background */
+/* --- Main Settings --- */
+/* Colors: Rose #775153, Gold #b2977a, Grey: #2a2a2a, White #dddad7 */
 
+body {
+    font-family: 'Monaco', monospace!important;
+
+
+}
 body.custom-background {
     background-image: url('../images/nasa_background.jpeg');
     background-repeat: repeat;
@@ -10,15 +16,16 @@ body.custom-background {
     font-family: Arial, sans-serif;
 }
 
-/* About Col */
+/* --- About / Contact Col --- */
 
 .about_col {
     background-color: #775153;
-    color: #ffffff;
-
+    color: #dddad7;
 }
 .bio_name blockquote {
     font-style: italic;
+    font-family: 'Snell Roundhand', cursive!important;
+
 }
 .bio_name blockquote span {
     font-style:normal;
@@ -34,7 +41,6 @@ body.custom-background {
 .about_col ul {
     list-style-type:none;
 }
-
 .bio_skills, .bio_contact {
     background-color: #2a2a2a;
     border: 1px solid rgba(224, 176, 150, 0.3);
@@ -49,38 +55,7 @@ body.custom-background {
     background-repeat: no-repeat;
 }
 
-/* -- CAT ANIMATIONS -- */
-#cat-size {
-    height: 140px;
-}
-#cat-animation {
-    width: 30%;
-    margin-left: auto;
-    cursor: pointer;
-}
-#sitting_cat-animation {
-    max-width: 20%;
-    margin-right: -6%;
-    opacity: 0.3;
-    display: inline-block;
-}
-
-/* -- Main contend -- */
-
-.main_content {
-    background-color: #b2977a;
-    border: 2px solid rgba(119, 81, 83, 0.8);
-    padding: 0;
-}
-
-.bio_job, .project {
-    background-color: #2a2a2a;
-    border: 1px solid rgba(224, 176, 150, 0.3);
-    padding: 15px;
-    border-radius: 5px;
-}
-
-/* Navbar */
+/* --- Navbar - Main Col --- */
 
 .navbar {
     padding: 0px;
@@ -107,37 +82,58 @@ body.custom-background {
     color: #775153;
 }
 
-/* Bio Job / Detail */
+/* --- Main Col --- */
 
-.bio_job_tech {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #77515342;
-    background-color: #7f7f7f30;
-    cursor: pointer;
-    border-radius: 5px;
-    letter-spacing: 0.1em
+.main_content {
+    background-color: #b2977a;
+    border: 2px solid rgba(119, 81, 83, 0.8);
+    padding: 0;
 }
+
+.bio_job, .project {
+    background-color: #2a2a2a;
+    border: 1px solid rgba(224, 176, 150, 0.3);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* --- Bio Job / Job Detail --- */
+
+.bio_job_description {
+    color: #b2977a;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    background-color: #1e1e1e;
+    font-style: italic;
+    border: 1px solid #77515342;
+    border-radius: 5px;
+}
+
+.bio_job_data {
+    padding: 0 5%;
+}
+
 .modal-content {
     background-color: #2a2a2a;
-    color: #f1f1f1;
+    color: #dddad7;
 }
 
 .modal-header, .modal-footer {
     border-color: #333333;
+    background-color: #b2977a;
+    color: #2a2a2a;
 }
 
-/* Projects in portfolio */
+/* --- Projects in portfolio --- */
 
 .project img {
     max-height: 180px
 }
 
-/* Buttons */
+/* --- Buttons --- */
 
 .btn {
     background-color: #444444;
-    color: #ffffff;
+    color: #dddad7;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -147,10 +143,6 @@ body.custom-background {
 .btn-secondary:hover {
     background-color: #775153!important;
 
-}
-.btn_history {
-    background-color: #77515325;
-    border: 1px solid #77515345;
 }
 .btn_contact {
     background-color:transparent;
@@ -170,11 +162,30 @@ body.custom-background {
     margin: auto;
 }
 
-/* Mobile fixed */
+/* --- CAT ANIMATIONS --- */
+
+#cat-size {
+    height: 140px;
+}
+#cat-animation {
+    width: 30%;
+    margin-left: auto;
+    cursor: pointer;
+}
+#lift_cat-animation {
+    margin-top: -10%;
+}
+#sitting_cat-animation {
+    max-width: 20%;
+    margin-right: -6%;
+    opacity: 0.3;
+    display: inline-block;
+}
+
+/* --- Mobile fixed --- */
 
 @media (max-width: 768px) {
     .main_about {
-    margin-bottom:46px;
     padding: 0px;
     }
     body .container {
@@ -186,5 +197,4 @@ body.custom-background {
     .project img {
 
     }
-
 }

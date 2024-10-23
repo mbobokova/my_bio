@@ -14,11 +14,17 @@
                 </div>
             </div>
 
-            <div class="bio_job_tech mb-3">
-                {{ job.tech | safe }}
+            <div class="bio_job_description mb-3">
+                """<br>
+                Technologies & Contributions:<br>
+                <div class="bio_job_data">{{ job.tech | safe }}<br></div>
+                """
+           <br><br>
+                """<br>
+                Description:<br>
+                <div class="bio_job_data">{{ job.job_description | safe }}<br></div>
+                """
             </div>
-
-            <p>{{ job.job_description | safe }}</p>
 
             <div class="d-flex justify-content-end">
                 <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#jobDetailModal" data-job="{{ job.job_detail }}" data-position="{{ job.position_name }}" data-start="{{ job.start_date }}" data-end="{{ job.end_date }}">
@@ -30,7 +36,7 @@
 
     <!-- Button to toggle the visibility of the old jobs section -->
     <div class="d-flex justify-content-center">
-        <button class="btn btn-secondary btn_history" type="button" data-bs-toggle="collapse" data-bs-target="#old-jobs-section" aria-expanded="false" aria-controls="old-jobs-section">
+        <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#old-jobs-section" aria-expanded="false" aria-controls="old-jobs-section">
             I want to see ancient history...
         </button>
     </div>

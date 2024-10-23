@@ -27,11 +27,10 @@ def bio():
         except Exception as e:
             flash(f"Failed to send email: {e}", "danger")  # Flash error message
 
-    # If GET request, render the bio page
+    # Fetch the jobs based on priority and convert to a list of dictionaries
     jobs = df_jobs[df_jobs['priority'] == 1]
     jobs = jobs[['position_name', 'company', 'tech', 'job_description', 'job_detail',
                  'start_date', 'end_date']].to_dict(orient='records')
-
     old_jobs = df_jobs[df_jobs['priority'] == 2]
     old_jobs = old_jobs[['position_name', 'company', 'tech', 'job_description', 'job_detail',
                          'start_date', 'end_date']].to_dict(orient='records')

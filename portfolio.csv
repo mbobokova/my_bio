@@ -1,18 +1,18 @@
 title,description,url,image
-News API,This Python script fetches the latest news articles about NASA from the News API and sends the information via email.,https://github.com/mbobokova/news_api,5.png
-Chatbox - OpenAi,"This Python script creates a PyQt6 chatbot GUI, featuring a chat display, input field, and send button, with an OpenAI GPT-based backend for generating responses.",https://github.com/mbobokova/chatbox_openai,10.png
-Company Streamlit App,"This Streamlit app features a homepage with company information and a ""Contact Us"" page that allows users to send emails directly through the app.",https://github.com/mbobokova/company_info,12.png
-PDF Templates,A script that generates PDF templates of multiple pages given some predefined guidelines.,https://github.com/mbobokova/pdf_generate,3.png
-PDF Invoices,A script that reads invoice records from Excel files and automatically generates PDF invoices.,https://github.com/mbobokova/invoice_generate,4.png
-Hotel Booking Script,"This Python script simulates a hotel booking system that manages hotel availability, validates credit card details, and generates reservation and spa package tickets based on user input. ",https://github.com/mbobokova/hotel_booking,15.png
-Job Application Form - Django,This Django web app features a job application form that stores candidate data in an SQLite database for streamlined hiring management. ,https://github.com/mbobokova/job_app_form_django,13.png
-Job Application Form - Flask,This is Job Application Form - rewritten in Flask,https://github.com/mbobokova/job_app_form_flask,14.png
-Nasa API,This Streamlit app fetches NASA's Astronomy Picture of the Day (APOD) using the NASA API.,https://github.com/mbobokova/nasa-picture-api,7.png
+Portfolio Website,Is this Flask app,https://github.com/mbobokova/my_bio,2.png
+Webcam Motion Detector,A program that monitors the computer webcam and sends an email when a new object enters the view.,https://github.com/mbobokova/webcam_alert,11.png
 Restaurant Menu Web App,A Django web app to let customers see a restaurant menu and meal availability.,https://github.com/mbobokova/restaurant_menu,19.png
+Job Application - Django,This Django web app features a job application form that stores candidate data in an SQLite database for streamlined hiring management. ,https://github.com/mbobokova/job_app_form_django,13.png
+Job Application - Flask,This is Job Application Form - rewritten in Flask,https://github.com/mbobokova/job_app_form_flask,14.png
 Student Management System,"This code implements a Student Management System using PyQt6 for the GUI and SQLite3 for database operations, allowing users to add, edit, delete, and search student records. ",https://github.com/mbobokova/student_mng_system,17.png
-Todo App,"This script creates a To-Do app with PySimpleGUI, featuring add, edit, and complete task functions. ",https://github.com/mbobokova/todoapp,1.png
+Chatbox - OpenAi,"This Python script creates a PyQt6 chatbot GUI, featuring a chat display, input field, and send button, with an OpenAI GPT-based backend for generating responses.",https://github.com/mbobokova/chatbox_openai,10.png
+Hotel Booking Script,"This Python script simulates a hotel booking system that manages hotel availability, validates credit card details, and generates reservation and spa package tickets based on user input. ",https://github.com/mbobokova/hotel_booking,15.png
 Weather API,A REST API built with Python and Flask to serve historical weather data for various cities.,https://github.com/mbobokova/weather-API,6.png
+News API,This Python script fetches the latest news articles about NASA from the News API and sends the information via email.,https://github.com/mbobokova/news_api,5.png
+Astronomy Picture API,This Streamlit app fetches NASA's Astronomy Picture of the Day (APOD) using the NASA API.,https://github.com/mbobokova/nasa-picture-api,7.png
 Visualizing Weather Forecast,"This Streamlit app displays a weather forecast for a selected location, allowing users to view either temperature trends or sky conditions ",https://github.com/mbobokova/weather-forecast-app,16.png
 Tour Event Notifier,"This Python script periodically scrapes a webpage for upcoming tour events, extracts relevant data, and stores it in a SQLite database. If a new event is found, it sends an email notification. ",https://github.com/mbobokova/web-scraping-app,8.png
-Webcam Motion Detector,A program that monitors the computer webcam and sends an email when a new object enters the view.,https://github.com/mbobokova/webcam_alert,11.png
-Portfolio Website,Is this Flask app,https://github.com/mbobokova/my_bio,2.png
+Company Streamlit App,"This Streamlit app features a homepage with company information and a ""Contact Us"" page that allows users to send emails directly through the app.",https://github.com/mbobokova/company_info,12.png
+Todo App,"This script creates a To-Do app with PySimpleGUI, featuring add, edit, and complete task functions. ",https://github.com/mbobokova/todoapp,1.png
+PDF Invoices,A script that reads invoice records from Excel files and automatically generates PDF invoices.,https://github.com/mbobokova/invoice_generate,4.png
+PDF Templates,A script that generates PDF templates of multiple pages given some predefined guidelines.,https://github.com/mbobokova/pdf_generate,3.png
