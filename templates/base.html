@@ -13,11 +13,11 @@
         <div class="row">
 
             <div class="col-md-4 main_about">
-                <div class="p-3 h-100 about_col">
+                <div class="p-2 h-100 about_col">
                     <div class="bio_about mt-3">
-                        <div class="bio_name p-2">
+                        <div class="bio_name p-3 pb-0">
                             <h2 class="mb-2">Martina Boboková</h2>
-                            <blockquote class="d-inline-block">
+                            <blockquote class="d-inline-block mb-0">
                                 „Believe you can and you're halfway there.“
                                 <br>
                                 <span class="d-block text-end">- Theodore Roosevelt</span>
@@ -59,29 +59,45 @@
                     </div>
 
                     <div class="bio_skills mt-5">
-                        <h4 class="mt-4 mb-5 p-1 text-end">TECH EXPERIENCES</h4>
+                        <h4 class="mt-3 mb-3 p-1 text-end">TECH EXPERIENCES</h4>
+                        <div class="tech_skills_code">
                         <pre><code>
 {
-  'Python': ['Flask', 'Django'],
+  'Backend': {
+    'Python': [
+        'Flask', 'Django', 'Google APIs'
+        ],
+    'JavaScript': ['Node.js']
+  },
   'VCS': ['Git', 'GitHub', 'GitLab'],
   'DB': ['MySQL', 'SQLite'],
   'FrontEnd': {
-    'JavaScript': ['Node.js', 'jQuery'],
-    'Google Apps Script || Cloud'': [''],
-    'HTML': [''],
-    'CSS': ['Sass', 'Bootstrap']
+    'JavaScript': ['JavaScript', 'jQuery'],
+    'Styling': ['Sass', 'Bootstrap', 'CSS'],
+    'Markup': ['HTML']
   },
-  'IDEs': ['PyCharm', 'Visual Studio Code'],
-  'Other': ['Jupyter', 'Linux', 'ASP'],
+  'Cloud & Scripting': {
+    'Google Apps Script':
+        [
+        'Automation scripts', 'APIs usage',
+        'Triggers', 'Workspace Integrations'
+        ]
+  },
+  'Development Tools': [
+     'PyCharm', 'Visual Studio Code',
+     'Docker', 'Jupyter'
+  ],
+  'Server Environments': ['Linux', 'Windows'],
   'Tools': ['Jira', 'Trello', 'Figma']
 }
                         </code></pre>
                     </div>
+                    </div>
                     
                             <div id="lift_cat-animation"></div>
 
-                    <div class="bio_competencies mt-5 p-4">
-                        <h4 class="mt-2 mb-4 border-bottom text-center">About me</h4>
+                    <div class="bio_competencies mt-4 p-4">
+                        <h4 class="mt-2 mb-3 border-bottom text-center">About me</h4>
                         <ul class="p-0 text-center">
                             <li class="mb-2">&#127912; Creative Mind</li>      <!-- 🧠 Brain -->
                             <li class="mb-2">&nbsp; Problem-Solver &#128161;</li>     <!-- 💡  -->
@@ -123,7 +139,7 @@
                                 aria-label="Find a bug?">
                                     <!-- Animation -->
                                     <div id="bug_report"></div>
-                                <p class="border-bottom text-center">REPORT BUG</p>
+                                <p class="border-bottom text-center mb-0">REPORT BUG</p>
                         </button>
                     </div>
                 </div>
@@ -223,6 +239,21 @@
                 return new bootstrap.Toast(toastEl);
             });
             toastList.forEach(toast => toast.show()); // Show each toast message automatically
+        });
+    </script>
+
+    <!-- Save the current scroll position in session storage -->
+    <script>
+        $(document).ready(function () {
+            // Restore scroll position on page load
+            if (sessionStorage.getItem('scrollPosition')) {
+                $(window).scrollTop(sessionStorage.getItem('scrollPosition'));
+            }
+
+            // Save scroll position before navigating away
+            $('nav a').on('click', function () {
+                sessionStorage.setItem('scrollPosition', $(window).scrollTop());
+            });
         });
     </script>
 

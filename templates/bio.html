@@ -18,7 +18,7 @@
                             {{ job.start_date | safe }} - {{ job.end_date | safe }}
                         </div>
                     </div>
-                    <h5 class="">{{ job.position_name | safe }}</h5>
+                    <h5 class="pb-2">{{ job.position_name | safe }}</h5>
                 </div>
             </div>
 
@@ -27,9 +27,9 @@
                 """<br>
                 Description:<br>
                 <div class="bio_job_data">{{ job.job_description | safe }}<br></div>
-                """
-                <br><br>
-                """<br>
+
+                <br>
+
                 Technologies & Contributions:<br>
                 <div class="bio_job_data">{{ job.tech | safe }}<br></div>
                 """
@@ -44,7 +44,7 @@
     {% endfor %}
 
     <!-- Button to toggle the visibility of the old jobs section -->
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center mt-3">
         <button class="btn btn_history" type="button" data-bs-toggle="collapse" data-bs-target="#old-jobs-section" aria-expanded="false" aria-controls="old-jobs-section">
             I want to see ancient history...
         </button>
@@ -54,8 +54,16 @@
     <div class="collapse mt-3" id="old-jobs-section">
         {% for old_job in old_jobs %}
             <div class="bio_job my-4">
-                <h4 class="">{{ old_job.position_name | safe }}</h4>
-                <h5 class="">- {{ old_job.company | safe }}</h5><br>
+                <div class="row">
+                    <div class="col">
+                        <h4 class="">{{ old_job.company | safe }}</h4>
+                    </div>
+                    <div class="bio_job-date col text-end">
+                        {{ old_job.start_date | safe }} - {{ old_job.end_date | safe }}
+                    </div>
+                </div>
+                <h5 class="">{{ old_job.position_name | safe }}</h5>
+
                 <p>{{ old_job.job_description | safe }}</p>
                 <div class="d-flex justify-content-end">
                     <!-- Additional content if needed -->
