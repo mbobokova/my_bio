@@ -162,9 +162,11 @@ body.custom-background {
 /* --- Projects in portfolio --- */
 
 .project img {
-    max-height: 180px
+    max-height: 180px;
 }
-
+.course_project img {
+    max-height: 90px;
+}
 /* --- Buttons --- */
 
 .btn {
