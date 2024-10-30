@@ -27,6 +27,7 @@ body.custom-background {
 .about_col {
     background-color: #a1696c;
     color: #dddad7;
+    height: 100%;
 }
 .bio_name blockquote {
     font-style: italic;
@@ -257,10 +258,14 @@ body.custom-background {
     #cat-animation {
         width: 33%;
     }
-    .btn_contact {
+    .bug_report .btn_contact {
         padding-top: 36px;
     }
-    .btn_contact p {
+    .bug_report .btn_contact p {
         font-size: 14px;
+    }
+    .about_col {
+    height: auto;
+    margin-bottom: 3rem;
     }
 }
