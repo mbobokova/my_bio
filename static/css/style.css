@@ -140,7 +140,11 @@ body.custom-background {
 .bio_job-date {
     font-size: 14px;
     pointer-events: none;
-    }
+    -webkit-touch-callout: none; /* Prevent callout */
+    -webkit-user-select: none; /* Prevent selection */
+    -webkit-user-drag: none; /* Prevent dragging */
+}
+
 .modal-content {
     background-color: #2a2a2a;
     color: #dddad7;
