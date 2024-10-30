@@ -69,6 +69,9 @@ body.custom-background {
     background-position: top 6px left 6px;
     background-repeat: no-repeat;
 }
+.tech_skills_code {
+    font-family: 'Fira Code', 'Courier New', monospace;
+}
 
 /* --- Navbar - Main Col --- */
 
@@ -109,7 +112,7 @@ body.custom-background {
 .bio_job, .project {
     background-color: #1e1e1e;
     border: 1px solid rgba(224, 176, 150, 0.3);
-    padding: 15px;
+    padding: 18px;
     border-radius: 5px;
 }
 .project {
@@ -135,6 +138,7 @@ body.custom-background {
 }
 .bio_job-date {
     font-size: 14px;
+    
     }
 .modal-content {
     background-color: #2a2a2a;
@@ -175,7 +179,7 @@ body.custom-background {
     background-color:transparent;
     border: none;
     border-radius: 5px;
-    padding: 10px;
+    padding-top: 16px;
 }
 .btn_contact:hover {
     background-color:#7376c740;
@@ -199,7 +203,7 @@ body.custom-background {
     color: #a1696c;
 }
 .btn_history {
-    background-color: #a1696c5c;
+    background-color: #1e1e1e;
 }
 .btn_history:hover, .btn_history:focus {
     color: #a1696c;
@@ -252,5 +256,11 @@ body.custom-background {
     }
     #cat-animation {
         width: 33%;
+    }
+    .btn_contact {
+        padding-top: 36px;
+    }
+    .btn_contact p {
+        font-size: 14px;
     }
 }
