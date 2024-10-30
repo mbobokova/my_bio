@@ -139,7 +139,7 @@ body.custom-background {
 }
 .bio_job-date {
     font-size: 14px;
-    
+    pointer-events: none;
     }
 .modal-content {
     background-color: #2a2a2a;
