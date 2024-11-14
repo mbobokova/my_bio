@@ -186,7 +186,7 @@ body.custom-background {
     background-color:transparent;
     border: none;
     border-radius: 5px;
-    padding-top: 16px;
+    padding: 12px;
 }
 .btn_contact:hover {
     background-color:#7376c740;
@@ -235,11 +235,14 @@ body.custom-background {
 /* --- BUG ANIMATIONS --- */
 
 #bug_report {
-    max-width:80px;
+    max-width:60px;
 }
-.bug_report {
+.btn-bug {
+    background-color: transparent;
+    border:none;
+    margin:80px 0 10px 0;
+}
 
-}
 /* --- Mobile fixed --- */
 
 @media (max-width: 768px) {

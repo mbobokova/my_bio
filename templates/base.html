@@ -69,12 +69,14 @@
     'Python': [
         'Flask', 'Django', 'Google APIs'
         ],
-    'JavaScript': ['Node.js']
+    'JavaScript': ['Node.js (learning)']
   },
   'VCS': ['Git', 'GitHub', 'GitLab'],
   'DB': ['MySQL', 'SQLite'],
   'FrontEnd': {
-    'JavaScript': ['JavaScript', 'jQuery'],
+    'JavaScript': [
+         'JavaScript', 'React (learning)',
+         ],
     'Styling': ['Sass', 'Bootstrap', 'CSS'],
     'Markup': ['HTML']
   },
@@ -87,7 +89,7 @@
   },
   'Development Tools': [
      'PyCharm', 'Visual Studio Code',
-     'Docker', 'Jupyter'
+     'Jupyter'
   ],
   'Server Environments': ['Linux', 'Windows'],
   'Tools': ['Jira', 'Trello', 'Figma']
@@ -105,8 +107,7 @@
                             <li class="mb-2">&nbsp; Problem-Solver &#128161;</li>     <!-- 💡  -->
                             <li class="mb-2">&#128220; Database Knowledge</li>  <!-- 📜  -->
                             <li class="mb-2">&nbsp; API Experience &#128187;</li>      <!-- 💻  -->
-                            <li class="mb-2">&#128736; CI/CD Knowledge</li>     <!-- ⚙️  -->
-                            <li class="mb-2">&nbsp; Responsible ⚖️</li>           <!-- ⚖️  -->
+                            <li class="mb-2">⚖️ Responsible </li>           <!-- ⚖️  -->
                         </ul>
                     </div>
 
@@ -135,13 +136,13 @@
                     <!-- Main content block -->
                     {% endblock %}
 
-                    <div class="bug_report d-flex justify-content-end align-self-end">
-                        <button type="button" class="btn btn_contact" data-bs-toggle="modal"
+                    <div class="bug_report float-end">
+                        <button type="button" class="btn btn-bug" data-bs-toggle="modal"
                                 data-bs-target="#reportBugModal" data-bs-toggle="tooltip" title="Find a bug?"
                                 aria-label="Find a bug?">
                                     <!-- Animation -->
                                     <div id="bug_report"></div>
-                                <p class="border-bottom text-center mb-0">REPORT BUG</p>
+                                <p class="border-bottom small text-center mb-0">REPORT BUG</p>
                         </button>
                     </div>
                 </div>
