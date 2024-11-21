@@ -1,12 +1,12 @@
 position_name,company,tech,job_description,job_detail,start_date,end_date,priority
-Web Application Administrator / Camunda BPM Developer,Nordic Telecom,"    - JavaScript, Java, BPMN: Dev. workflows in Camunda BPM and integrated multiple systems.<br>
+Process / BPM Developer,Nordic Telecom,"    - BPMN, JavaScript, Java, : Dev. workflows in Process Engine and integrated multiple systems.<br>
     - Python: frameworks, custom libraries, APIs, scripting tasks.<br>
     - HTML, CSS: Frontend development and styling.<br>
     - Jira: Managed Agile tasks and sprint planning.<br>
     - GitLab: Version control.<br>
-    - Kibana, Elastic: Log Analyst.","Developed, automated, and optimized business processes within Camunda BPM, using a range of technologies to improve system efficiency. Reduced outsourcing costs by handling updates and support in-house.","At the beginning of this position, I started as a tester and administrator in an internal TSM/CRM system, which is process-driven, with workflows programmed in <strong>Camunda BPM</strong>. These processes interact with various forms and configuration settings.
+    - Kibana, Elastic: Log Analyst.","Developed, automated, and optimized business processes within Process Engine, using Business Process Model and Notation (BPMN). Reduced outsourcing costs by handling updates and support in-house.","At the beginning of this position, I started as a tester and administrator in an internal Telco Service Management system, which is process-driven, with workflows programmed in <strong>Process Engine</strong>. Process Engine executes BPMN-modeled business processes, automating workflows and integrating systems efficiently. These processes interact with various forms and configuration settings.
 <br><br>
-As I gained a deeper understanding of the system and analyzed development requirements, my role evolved into programming new processes and modifying existing ones in Camunda BPM, utilizing <strong>JavaScript, Java, and Groovy</strong>. When backend interventions were necessary, I collaborated with external vendors to ensure compatibility with development requirements.
+As I gained a deeper understanding of the system and analyzed development requirements, my role evolved into programming new processes and modifying existing ones in Process Engine, utilizing <strong>JavaScript, Java, and Groovy</strong>. When backend interventions were necessary, I collaborated with external vendors to ensure compatibility with development requirements.
 <br><br>
 Agile environment, Jira for task management
 <br><br>
