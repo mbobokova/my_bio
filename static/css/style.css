@@ -1,37 +1,22 @@
 /* --- Main Settings --- */
 
-/* Colors:  Rose #775153 - NEW #a1696c,
-            Gold #b2977a,
-            Grey: #2a2a2a,
-            White #dddad7,
-            Dark: #1e1e1e, Darker: #121212
-            */
-
 body {
-    font-family: 'Monaco', monospace!important;
-
-
-}
-body.custom-background {
-    background-image: url('../images/nasa_background.jpeg');
-    background-repeat: repeat;
-    background-size: 100%;
-    background-position: top left;
-    background-attachment: fixed;
+    background-color:#1A1A1A;
     color: #f1f1f1;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 /* --- About / Contact Col --- */
 
-.about_col {
-    background-color: #a1696c;
-    color: #dddad7;
-    height: 100%;
+.about_col, .main_content {
+    background-color: #262626;
+    color: #F0F0F0;
+    border: 1px solid #333333;
+    box-shadow: 0 0 0 1px rgba(119, 81, 83, 0.4);
 }
+
 .bio_name blockquote {
     font-style: italic;
-
 }
 .bio_name blockquote span {
     font-style:normal;
@@ -53,14 +38,12 @@ body.custom-background {
 }
 .bio_skills, .bio_contact, .bio_competencies {
     background-color: #1e1e1e;
-    border: 1px solid rgba(224, 176, 150, 0.3);
+    border: 1px solid rgba(119, 81, 83, 0.3);
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
 }
-.bio_contact {
-    margin-top:4px;
-}
+
 .bio_contact a {
     color: #dddad7;
 }
@@ -80,59 +63,45 @@ body.custom-background {
     padding: 0px;
     text-align: center;
 }
-
 .navbar-nav .nav-item {
     width: 50%;
     background-color:#1e1e1e;
 }
 .navbar a, .project a {
-    color: #b29478;
+    color: #7b5e60;
     text-decoration: none;
     font-size: 22px;
 }
 .nav-link.active{
-    color: #2a2a2a;
+    color: #C0C0C0;
     font-size: 28px;
     font-weight: bold;
-    background-color: #b29478!important;
+    background-color: #262626!important;
     height:100%;
 }
-
 .navbar a:hover, .project a:hover {
-    color: #a1696c;
+    color: rgba(119, 81, 83, 0.8);
 }
 
 /* --- Main Col --- */
 
-.main_content {
-    background-color: #b2977a;
-    border: 2px solid rgba(119, 81, 83, 0.8);
-    padding: 0;
-}
-
 .bio_job, .project {
     background-color: #1e1e1e;
-    border: 1px solid rgba(224, 176, 150, 0.3);
+    border: 1px solid #333333;
     padding: 18px;
     border-radius: 5px;
+    height: 100%;
 }
-.project {
-    border-radius: 0px;
 
-}
 /* --- Bio Job / Job Detail --- */
 
-.bio_job_description, .portfolio_info {
+.bio_job_description {
     color: #dddad7;
-    font-family: 'Fira Code', 'Courier New', monospace;
+    font-family: 'Open Sans', Arial, sans-serif;
     background-color: #121212;
     padding: 16px 8px;
-    border: 1px solid #a1696c42;
+    border: 1px solid #333333;
     border-radius: 5px;
-}
-.portfolio_info a {
-    color: #7376c7;
-    font-size: 16px;
 }
 .bio_job_data {
     padding: 0 5%;
@@ -148,38 +117,33 @@ body.custom-background {
 .modal-content {
     background-color: #2a2a2a;
     color: #dddad7;
+    border: 1px solid #333333;
+    box-shadow: 0 0 0 1px rgba(119, 81, 83, 0.8);
 }
 .modal-header, .modal-footer {
     font-weight: 600;
+    font-size:26px;
     border-color: #333333;
-    background-color: #b2977a;
-    color: #2a2a2a;
-    padding: 6px 16px;
-}
-.modal-bg-pink {
-    background-color: #a1696c;
-}
-/* --- Projects in portfolio --- */
+    background-color: #1A1A1A ;
+    color: #F0F0F0;
+    padding: 16px 16px;
 
-.project img {
-    max-height: 180px;
 }
-.course_project img {
-    max-height: 90px;
-}
+
 /* --- Buttons --- */
 
 .btn {
     background-color: #121212ba;
     color: #dddad7;
-    border: 1px solid #a1696c42;
+    border: 1px solid #333333;
+    box-shadow: 0 0 0 1px rgba(119, 81, 83, 0.5);
     padding: 3px 8px;
     cursor: pointer;
     border-radius: 5px;
 }
 
 .btn-secondary:hover {
-    background-color: #a1696c!important;
+    background-color: #7b5e60!important;
 
 }
 .btn_contact {
@@ -204,6 +168,7 @@ body.custom-background {
     color: #7376c7;
     background-color: transparent!important;
     border-radius: 0;
+    border: none;
     padding: 0;
 }
 .btn_contact_mail:hover, .btn_contact_mail:focus {
@@ -232,16 +197,6 @@ body.custom-background {
     display: inline-block;
 }
 
-/* --- BUG ANIMATIONS --- */
-
-#bug_report {
-    max-width:60px;
-}
-.btn-bug {
-    background-color: transparent;
-    border:none;
-    margin:80px 0 10px 0;
-}
 
 /* --- Mobile fixed --- */
 
@@ -255,9 +210,7 @@ body.custom-background {
     .bio_job_tech {
         width:100%;
     }
-    .project img {
 
-    }
     .bio_contact, .bio_skills, .bio_competencies {
         margin: 0px
     }

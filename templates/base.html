@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta property="og:title" content="Bio - Martina Bobokova" />
     <meta property="og:image" content="https://my-bio-237b09d17bdf.herokuapp.com{{ url_for('static', filename='images/36.jpg') }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/style.css">
     <title>My Bio - Martina Bobokova</title>
 </head>
-<body class="custom-background">
-
+<body>
     <div class="container">
-        <div class="row">
+        <div class="row g-0 ">
 
-            <div class="col-md-4 main_about">
-                <div class="p-2 about_col">
+            <div class="col-md-4 main_about pe-4">
+                <div class="about_col">
                     <div class="bio_about mt-3">
                         <div class="bio_name p-3 pb-0">
                             <h2 class="mb-2">Martina Boboková</h2>
@@ -112,11 +112,10 @@
                     </div>
 
                 </div>
-
             </div>
 
             <div class="col-md-8 main_content">
-
+                <div style="min-height: 100%;">
                 <nav class="navbar navbar-expand bg-dark">
                     <ul class="navbar-nav w-100">
                         <li class="nav-item">
@@ -131,22 +130,13 @@
                     </ul>
                 </nav>
 
-                <div class="p-md-4 p-2 h-100">
+                <div class="p-md-4 p-2">
                     {% block content %}
                     <!-- Main content block -->
                     {% endblock %}
 
-                    <div class="bug_report float-end">
-                        <button type="button" class="btn btn-bug" data-bs-toggle="modal"
-                                data-bs-target="#reportBugModal" data-bs-toggle="tooltip" title="Find a bug?"
-                                aria-label="Find a bug?">
-                                    <!-- Animation -->
-                                    <div id="bug_report"></div>
-                                <p class="border-bottom small text-center mb-0">REPORT BUG</p>
-                        </button>
-                    </div>
                 </div>
-
+                    </div>
             </div>
         </div>
     </div>
@@ -164,7 +154,7 @@
     <div class="modal fade move_modal" id="contactMeModal" tabindex="-1" aria-labelledby="contactMeModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content position-absolute">
-                 <div class="modal-header modal-bg-pink">
+                 <div class="modal-header">
                     <h5 class="modal-title" id="contactMeModalLabel">Contact Me</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -180,35 +170,6 @@
                         <div class="row justify-content-end">
                             <div class="col-auto form-group">
                                 <button class="btn btn-secondary" id="form_button" type="submit">Send E-mail</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal block REPORT BUG -->
-
-    <div class="modal fade move_modal" id="reportBugModal" tabindex="-1" aria-labelledby="reportBugModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content position-absolute">
-                 <div class="modal-header">
-                    <p class="modal-title" id="reportBugModalLabel">Bug spotted in the app! 🐛</p>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form method="post" >
-                        <div class="form-group mb-4">
-                            <input class="form-control mb-3 mt-2" id="sender_rep" name="sender"
-                                   type="email" placeholder="Leave contact if you want">
-
-                            <textarea class="form-control mt-2" id="message_rep" name="message"
-                                      rows="5" required placeholder="I found a bug..."></textarea>
-                        </div>
-                        <div class="row justify-content-end">
-                            <div class="col-auto form-group">
-                                <button class="btn btn-secondary" id="form_button_rep" type="submit">Report!</button>
                             </div>
                         </div>
                     </form>
