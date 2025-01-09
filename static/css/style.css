@@ -72,6 +72,11 @@ body {
     text-decoration: none;
     font-size: 28px;
 }
+.project a {
+    color: #7b5e60;
+    text-decoration: none;
+    font-size: 18px;
+}
 .nav-link.active{
     color: #7b5e60;
     font-size: 28px;
