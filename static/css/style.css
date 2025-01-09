@@ -68,19 +68,19 @@ body {
     background-color:#1e1e1e;
 }
 .navbar a, .project a {
-    color: #7b5e60;
+    color: #C0C0C0;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 28px;
 }
 .nav-link.active{
-    color: #C0C0C0;
+    color: #7b5e60;
     font-size: 28px;
     font-weight: bold;
     background-color: #262626!important;
     height:100%;
 }
 .navbar a:hover, .project a:hover {
-    color: rgba(119, 81, 83, 0.8);
+    color: #c0c0c0ab;
 }
 
 /* --- Main Col --- */
@@ -168,7 +168,8 @@ body {
     color: #7376c7;
     background-color: transparent!important;
     border-radius: 0;
-    border: none;
+    border: none!important;
+    box-shadow: none!important;
     padding: 0;
 }
 .btn_contact_mail:hover, .btn_contact_mail:focus {
